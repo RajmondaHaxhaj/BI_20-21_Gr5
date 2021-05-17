@@ -260,12 +260,19 @@
                 <p>In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper
                     bags.
                     Wolle and his brother patented the machine and founded the Union Paper Bag Company.
+                    
                     <?php 
-                    $str="In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper
-                    bags. Wolle and his brother patented the machine and founded the Union Paper Bag Company.";
-                    echo "Gjatesia e stringut: " . "" . strlen($str);
-                    echo str_replace("brother", "sister", $str); 
-                    echo substr($str, 220);
+                    //kerkesa3
+                         $str="In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper
+                         bags. Wolle and his brother patented the machine and founded the Union Paper Bag Company.";
+                        echo "Gjatesia e stringut: " . "" . strlen($str);
+                        echo str_replace("brother", "sister", $str); 
+                        echo substr($str, 220);
+                        print_r (explode(" ",$str));
+                        $arr = array('Hello','World!','Beautiful','Day!');
+                        echo implode(" ",$arr);
+                        $number = 123;
+                        printf("Price ith 2 decimals: %1\$.2f <br>With no decimals: %1\$u",$number);
                     ?>
                 </p>
                 <br>
