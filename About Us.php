@@ -421,7 +421,12 @@
                         margin-top: 10px;
                         border: 1px solid black;">
             <p id="thelast">
-                <span id="grey">COPYRIGHT &COPY; 2021-All rights reserved-
+                <span id="grey">COPYRIGHT &COPY; <?php
+                    $topic = "-2021";
+                    //Zevendeson vizat me hapesira
+                    $stringu_i_ri = str_replace('-', ' ', $topic);
+                    echo $stringu_i_ri; 
+                    ?>-All rights reserved-
                     <abbr title="AllRounder">AR</abbr>
                 </span>
             </p>
