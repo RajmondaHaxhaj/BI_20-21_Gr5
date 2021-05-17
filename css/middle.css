@@ -1,0 +1,128 @@
+/*  */
+.boxlarge
+        {
+           
+       
+            width:1000px;
+            margin-left: auto;
+            margin-right: auto;
+            display:flex;
+            
+        }
+
+         .boxlarge:hover + .vija{margin-top:100px}
+      
+        .box
+        {
+            color:white;
+            display:inline-block;
+            width: 225px;height:280px;
+            margin-left:12.5px;
+            margin-top:50px;
+            margin-bottom:50px;
+        }
+
+        .top
+        {
+            width:225px;
+            height:140px;
+        }
+
+        .bot
+        {
+            background-color:rgb(240, 240, 240);
+            width:225px;
+            height:140px;
+        } 
+
+        .letter
+        {
+           
+            margin-top:auto;
+            margin-left: auto;
+            margin-right: auto;
+            width:920px;
+            padding-top:50px;
+        }
+
+        #newsletter
+        {
+            text-align:center;
+            padding-bottom:55px;
+            padding-top:20px;
+            margin:0px;
+            font-family:georgia;
+            color:rgb(51, 51, 51);
+            font-size:28px;
+            font-style:oblique;
+            font-weight:normal;
+            width:100%;
+            height:100%;
+        }
+
+        .brand
+        {
+            padding:10px;
+            margin:0px;
+            color:rgb(124, 156, 55);
+            font-size:24px;
+            font-style:normal;
+            font-weight:normal;
+        }
+
+        .description
+        {
+            padding-left:10px;
+            margin:0px;
+            color:rgb(102, 102, 102);
+            font-size:14px;
+            font-style:normal;
+            font-weight:normal;
+        }
+
+        .vija
+        {
+            width:800px;
+            border:1.5px solid rgb(232, 232, 232);
+            border-top-right-radius: 1000px 10px;
+            border-top-left-radius: 1000px 10px;
+            border-bottom-right-radius: 1000px 10px;
+            border-bottom-left-radius: 1000px 10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        span.hiddentext
+        {
+            display:none;
+        }
+
+        .box:hover span.hiddentext
+        {
+            display:block;
+            transition: .5s;
+        }
+
+        .box:hover .bot
+        {
+            height:280px;
+        }
+
+        div.box:hover + div.vija
+        {
+            margin-top:100px;
+        }  
+
+     .trandiv{
+         width:100%;
+         height:auto;
+         background-color:rgba(255,255,255,1);
+         margin-right:auto;
+         margin-left: auto;
+         min-width:1000px;
+        }
+
+     .trandiv:hover{
+         background-color:rgba(255,255,255,0.5) 
+        }
+       

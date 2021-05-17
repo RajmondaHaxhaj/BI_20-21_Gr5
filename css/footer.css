@@ -1,0 +1,115 @@
+
+/*  */
+#wrapper{     
+      font-family:'Niramit','Sorts Mill Goudy','sans serif';
+     font-size:16px;
+    padding-top:30px;
+    width: 1000px;
+    height: 400px;
+    background-color:rgb(34,34,34);
+    margin-left:auto;
+    margin-right: auto;
+        }
+    #wrapper div{
+       
+         color: rgb(102,102,102);
+        width: 210px;
+        height: 285px;
+        padding:10px;
+        display: inline-block;
+        margin-left:10px;
+        vertical-align: top;
+    }
+   
+    #wrapper div img{
+        border:3px solid grey;
+        width: 210px;
+        height: 90px;
+    }
+    #wrapper div ul{
+        margin-top:10px;
+        font-size:12px;
+        height:243px;
+    }
+    #wrapper div.small{
+        margin-top:5px;
+        width: 190px;
+        height:106px;
+        margin-left:-10px;
+    }
+    #wrapper hr{
+        color: #ffffe6;
+        padding-top:20px;
+    }
+    #thelast{
+        margin-left:10px;
+    }
+    #grey{
+        color: rgb(102,102,102);
+    }
+    @import "compass/css3";
+
+
+    #wrapper ul li {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    }
+
+    #wrapper li {
+    font: 200 15px/1.5 Helvetica, Verdana, sans-serif;
+    border-bottom: 1px solid #12883a73;
+    ;
+    }
+
+    #wrapper li:last-child {
+    border: none;
+    }
+
+    #wrapper li a {
+    text-decoration: none;
+    color: rgb(124,156,55);
+
+    -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+    -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+    transition: font-size 0.3s ease, background-color 0.3s ease;
+    display: block;
+    }
+
+    #wrapper li a:hover {
+    font-size: 16px;
+    background: #12883a73;
+    }
+    
+    #wrapper input{
+        border:0px;
+        height: 30px;
+        width:190px;
+        background-color: rgb(53,53,53);
+        border-radius: 9px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #wrapper button
+    {
+        border:0px;
+       color:white;
+        height: 30px;
+        width: 90px;
+        background-color:rgb(124,156,55);
+        font-size: 14px;
+        border-radius: 9px;
+        
+    }
+    #wrapper button:hover
+    {
+        font-size: 15px;
+        text-decoration-color: aliceblue;
+        cursor: pointer;
+         border: 2px solid;
+    }
+     
+ 
