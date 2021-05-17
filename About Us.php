@@ -259,7 +259,15 @@
                 <br>
                 <p>In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper
                     bags.
-                    Wolle and his brother patented the machine and founded the Union Paper Bag Company.</p>
+                    Wolle and his brother patented the machine and founded the Union Paper Bag Company.
+                    <?php 
+                    $str="In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper
+                    bags. Wolle and his brother patented the machine and founded the Union Paper Bag Company.";
+                    echo "Gjatesia e stringut: " . "" . strlen($str);
+                    echo str_replace("brother", "sister", $str); 
+                    echo substr($str, 220);
+                    ?>
+                </p>
                 <br>
                 <p>
                     <a style="text-decoration: none;
