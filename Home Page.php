@@ -161,7 +161,7 @@
 
         <div class="letter">
             <h1 id="newsletter"><?php
-                    $array = array( ' A woman should be two things:', ' <em>Classy</em> and <em>Fabulous</em>.'); $string = implode(' ', $array); // Perdoret nje hapesire si bashkues midis elementeve
+                    $array = array( ' A woman should be two things:', ' <em>Classy</em> and <em>Fabulous</em>.'); $string = implode(' ', $array); 
 
                     echo $string;
                    ?></h1>
@@ -173,7 +173,7 @@
 
 <<?php
 
-                class Titulli{
+                class Title{
                 public $title;
                 function __construct($aTitle){
                 $this->title = $aTitle;
@@ -192,10 +192,10 @@
                                   }
                                   }
 
-                $title1 = new Titulli("Zara");
-                $title2 = new Titulli("Mango");
-                $title3 = new Titulli("Stradivarius");
-                $title4 = new Titulli("Hotic");
+                $title1 = new Title("Zara");
+                $title2 = new Title("Mango");
+                $title3 = new Title("Stradivarius");
+                $title4 = new Title("Hotic");
                             ?>
         <div class="boxlarge">
 
