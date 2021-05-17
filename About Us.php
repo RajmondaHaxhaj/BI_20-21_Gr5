@@ -232,28 +232,22 @@
 
     </textarea><br><input type="submit" value="Send">
             <input type="reset" value="Reset"><br>
-    Are you having a good user experience? <br>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Yes</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">No</label><br>
-    Check the checkbox for good luck and all points in PWWW:)
-    <input type="checkbox"><br>
+    
+   
             
         </form>
         <?php 
                     //kerkesa3
-                         $str="In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper
-                         bags. Wolle and his brother patented the machine and founded the Union Paper Bag Company.";
+                         $str=".  In 1852, Francis Wolle, a schoolteacher, invented the first machine to mass-produce paper
+                         bags.";
                         echo "Gjatesia e stringut: " . "" . strlen($str);
-                        echo str_replace("brother", "sister", $str); 
-                        echo substr($str, 220);
-                        print_r (explode(" ",$str));
+                        echo str_replace("first", "second", $str); 
+                        print_r (explode(" ","stringu stringu"));
                         $arr = array('Hello','World!','Beautiful','Day!');
                         echo implode(" ",$arr);
                         $number = 123;
-                        printf("Price ith 2 decimals: %1\$.2f <br>With no decimals: %1\$u",$number);
-                    ?>
+                        printf("Price with 2 decimals: %1\$.2f  With no decimals: %1\$u",$number);
+            ?>
     </div>
 
 
