@@ -191,7 +191,7 @@
             <input type="submit"  name="login" value="Login">
         </form>
         <div class="Create">
-            <a href="Sign UP.html">
+            <a href="Sign UP.php">
                 Create Account...
             </a>
         </div>
