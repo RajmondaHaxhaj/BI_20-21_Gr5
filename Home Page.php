@@ -1,4 +1,28 @@
-<!DOCTYPE html>
+
+<?php
+
+
+if(isset($_COOKIE['username']))
+{
+  echo "Welcome to our page ".$_COOKIE['username'];
+}
+
+session_start();
+if (isset($_SESSION['num']))
+ {
+    $_SESSION['num'] += 1;
+}
+ else {
+    $_SESSION['num'] = 1;
+}
+if($_SESSION['num']>=10)
+{
+  session_destroy();
+}
+
+$msg = "Ju keni vizituar faqen tone " . $_SESSION['num'];
+$msg .= " here brenda ketij sesioni!";
+?>
 <html>
 
 <head>
@@ -29,6 +53,9 @@
         <div class="contactEm" onClick="location.href='https://mail.google.com/mail'" style="cursor:pointer;">
           Email Us: contact@mydomain.com
         </div>
+        <?php
+        echo ($msg);
+        ?>
         <div style=" display:inline-block; float:right;">
           <form class="searchbar" action="">
 
@@ -161,7 +188,7 @@
 
         <div class="letter">
             <h1 id="newsletter"><?php
-                    $array = array( ' A woman should be two things:', ' <em>Classy</em> and <em>Fabulous</em>.'); $string = implode(' ', $array); 
+                    $array = array( ' A woman should be two things:', ' <em>Classy</em> and <em>Fabulous</em>.'); $string = implode(' ', $array);
 
                     echo $string;
                    ?></h1>
@@ -476,11 +503,11 @@
                             <address id="email">Email:<a style="text-decoration:none;color:rgb(124,156,55)"
                                     href="">contact@mydomain.com</a></address>
                                     <!-- date and time -  built-in function-->
-                             <?php 
+                             <?php
                             $date = date('d-m-y h:i:s');
                             echo $date; ?>
                         </div>
-                        
+
                         <div class="small">
                             <h3>NEWSLETTER</h3>
                             <br>
@@ -503,7 +530,7 @@
                     $topic = "-2021";
                     //Zevendeson vizat me hapesira
                     $stringu_i_ri = str_replace('-', ' ', $topic);
-                    echo $stringu_i_ri; 
+                    echo $stringu_i_ri;
                     ?> -All rights reserved-
                             <abbr title="AllRounder">AR</abbr></span></p>
                 </div>
