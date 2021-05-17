@@ -166,6 +166,13 @@
           
             <div class="login">Already a member? <a href="Sign In.php">Login</a></div>
             <p>
+                <!-- read from file-->
+            <?php
+extract($_REQUEST);
+$file=fopen("file.txt","r");
+echo fread($file,filesize("file.txt"))."<br>";
+fclose($file);                    
+?> 
      <?php
    function exception_handler($exception) {
       echo "Fushat janë obligative " , $exception->getMessage(), "\n";
@@ -182,3 +189,14 @@
       </div>  
     </body>
 </html>
+<?php
+extract($_REQUEST);
+$file=fopen("form-save.txt","a");
+fwrite($file,"Emri :");
+fwrite($file,$username."\n");
+fwrite($file,"Email :");
+fwrite($file,$email."\n");
+fwrite($file,"Password :");
+fwrite($file,$password."\n");
+fclose($file);
+?> 
